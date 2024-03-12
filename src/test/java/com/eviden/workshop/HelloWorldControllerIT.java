@@ -18,6 +18,7 @@ public class HelloWorldControllerIT {
     @Test
     public void getHello() throws Exception {
         ResponseEntity<String> response = template.getForEntity("/hello", String.class);
+        System.out.println("test");
         assertThat(response.getBody()).isEqualTo("Hello from Minicube!");
     }
 }
