@@ -10,7 +10,7 @@ public class HelloWorldController {
 
   @GetMapping("/hello")
   public String sayHello() {
-    return "Hello from Minikube!";
+    return "Hello from Minicube!";
   }
 
 }
